@@ -55,10 +55,10 @@ def write_to_file(output, *data):
 
 def main():
     if len(sys.argv) == 3:
-        dir_path = get_dir_file_paths(sys.argv)
+        file_paths = get_dir_file_paths(sys.argv[1])
         results_file = open(sys.argv[1], 'w')
 
-        for file in dir_path:
+        for file in file_paths:
             words_count = get_words_count(file)
             symbols_count = get_symbols_count(file)
 
@@ -68,8 +68,8 @@ def main():
             results_file.write("Symbols:\n")
             write_to_file((results_file,symbols_count))
 
-        words_count = get_words_count(dir_path)
-        symbols_count = get_symbols_count(dir_path)
+        words_count = get_words_count(file_paths)
+        symbols_count = get_symbols_count(file_paths)
 
         results_file.write("Statistics of all files from directory '%s':"
                                "\nWords:\n" % sys.argv[1])
