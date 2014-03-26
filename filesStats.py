@@ -10,7 +10,13 @@ import sys
 
 
 def get_dir_file_paths(path):
-    return os.listdir(path)
+    file_paths = os.listdir(path)
+
+    for item in file_paths:
+        if not(os.path.isfile(item)):
+            file_paths.remove(item)
+
+    return file_paths
 
 def get_words_count(*args):
     words_dict = {}
