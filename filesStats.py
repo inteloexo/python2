@@ -6,9 +6,10 @@
 
 
 import os
+import sys
 
 
-def get_dir_filepaths(path):
+def get_dir_file_paths(path):
     return os.listdir(path)
 
 def get_words_count(*args):
@@ -51,3 +52,6 @@ def get_symbols_count(*args):
 def write_to_file(output, *data):
     for key in data:
        output.write("'%s' - %s" % (key, data[key]))
+
+def main():
+    file_paths = get_dir_file_paths(sys.argv)
