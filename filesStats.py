@@ -1,7 +1,7 @@
 #Apskaiciuoti nurodytoje direktorijoje esanciu failu statistika ir ja isvesti i faila.
 #Statistika: pirmiausia isvesti bendrai visuose failuose kokie ir kiek kartu
-#pasikartoja a) zodžiai b) simboliai. Antra, i ta pati faila isvesti ta pąčia
-#statistika apskaičiuota kiekvienam failui atskirai.
+#pasikartoja a) zodziai b) simboliai. Antra, i ta pati faila isvesti ta pacia
+#statistika apskaiciuota kiekvienam failui atskirai.
 #Author - Mantas Gedrimas
 
 
@@ -54,7 +54,7 @@ def write_to_file(output, *data):
        output.write("'%s' - %s\n" % (key, data[key]))
 
 def main():
-    if sys.argv == 3:
+    if len(sys.argv) == 3:
         file_paths = get_dir_file_paths(sys.argv)
         results_file = open(sys.argv[1], 'w')
 
