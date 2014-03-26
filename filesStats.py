@@ -1,7 +1,7 @@
-#Apskaičiuoti nurodytoje direktorijoje esančių failų statistiką ir ją išvesti į failą.
-#Statistika: pirmiausia išvesti bendrai visuose failuose kokie ir kiek kartų
-#pasikartoja a) žodžiai b) simboliai. Antra, į tą patį failą išvesti tą pąčią
-#statistiką apskaičiuotą kiekvienam failui atskirai.
+#Apskaiciuoti nurodytoje direktorijoje esanciu failu statistika ir ja isvesti i faila.
+#Statistika: pirmiausia isvesti bendrai visuose failuose kokie ir kiek kartu
+#pasikartoja a) zodžiai b) simboliai. Antra, i ta pati faila isvesti ta pąčia
+#statistika apskaičiuota kiekvienam failui atskirai.
 #Author - Mantas Gedrimas
 
 
