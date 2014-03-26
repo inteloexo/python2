@@ -26,6 +26,7 @@ def get_words_count(*args):
                 else:
                     words_dict[word] = 1
 
+    opened_file.close()
     return words_dict
 
 
@@ -43,4 +44,5 @@ def get_symbols_count(*args):
                     else:
                         symbols_dict[symbol] = 1
 
+    opened_file.close()
     return symbols_dict
