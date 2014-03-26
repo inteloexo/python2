@@ -6,8 +6,24 @@
 
 
 import os
-import sys
-import string
+
 
 def get_dir_filepaths(path):
     return os.listdir(path)
+
+def get_words_count(*args):
+    words_dict = {}
+
+    for file in args:
+        opened_file = open(file, 'r')
+
+        for line in opened_file:
+            lines = line.split()
+
+            for word in lines:
+                if word in words_dict:
+                    words_dict[word] = words_dict[word] + 1
+                else:
+                    words_dict[word] = 1
+
+    return words_dict
