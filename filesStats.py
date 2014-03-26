@@ -12,9 +12,15 @@ import sys
 def get_dir_file_paths(path):
     file_paths = os.listdir(path)
 
+    for index, item in enumerate(file_paths):
+        item = path + '/' + item
+        if os.path.isfile(item):
+            file_paths[index] = item
+        else:
+            file_paths.remove(file_paths[index])
+
     for item in file_paths:
-        if not(os.path.isfile(item)):
-            file_paths.remove(item)
+        print (item)
 
     return file_paths
 
