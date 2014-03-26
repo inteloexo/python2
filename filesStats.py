@@ -46,3 +46,8 @@ def get_symbols_count(*args):
 
     opened_file.close()
     return symbols_dict
+
+
+def write_to_file(output, *data):
+    for key in data:
+       output.write("'%s' - %s" % (key, data[key]))
