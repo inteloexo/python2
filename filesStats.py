@@ -55,9 +55,9 @@ def get_symbols_count(*args):
     return symbols_dict
 
 
-def write_to_file(output, *data):
-    for key in data:
-       output.write("'%s' - %s\n" % (key, data[key]))
+def write_to_file(output, **kwargs):
+    for key in kwargs:
+       output.write("'%s' - %s\n" % (key, kwargs[key]))
 
 def main():
     if len(sys.argv) == 3:
@@ -71,18 +71,18 @@ def main():
 
                 results_file.write("Statistics of file '%s':"
                                "\nWords:\n" % (file))
-                write_to_file(results_file, words_count)
+                write_to_file(results_file, **words_count)
                 results_file.write("Symbols:\n")
-                write_to_file((results_file,symbols_count))
+                write_to_file(results_file, **symbols_count)
 
-            words_count = get_words_count(file_paths)
-            symbols_count = get_symbols_count(file_paths)
+            words_count = get_words_count(*file_paths)
+            symbols_count = get_symbols_count(*file_paths)
 
             results_file.write("Statistics of all files from directory '%s':"
                                 "\nWords:\n" % sys.argv[2])
-            write_to_file(results_file, words_count)
+            write_to_file(results_file, **words_count)
             results_file.write("Symbols:\n")
-            write_to_file((results_file,symbols_count))
+            write_to_file(results_file, **symbols_count)
 
             results_file.close()
         else:
