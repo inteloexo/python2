@@ -18,12 +18,29 @@ def get_words_count(*args):
         opened_file = open(file, 'r')
 
         for line in opened_file:
-            lines = line.split()
+            words = line.split()
 
-            for word in lines:
+            for word in words:
                 if word in words_dict:
                     words_dict[word] = words_dict[word] + 1
                 else:
                     words_dict[word] = 1
 
     return words_dict
+
+
+def get_symbols_count(*args):
+    symbols_dict = {}
+
+    for file in args:
+        opened_file = open(file, 'r')
+
+        for line in opened_file:
+            for symbol in line:
+                if symbol != ' ':
+                    if symbol in dict:
+                        symbols_dict[symbol] = symbols_dict[symbol] + 1
+                    else:
+                        symbols_dict[symbol] = 1
+
+    return symbols_dict
