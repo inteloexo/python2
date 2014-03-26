@@ -46,7 +46,7 @@ def get_symbols_count(*args):
         for line in opened_file:
             for symbol in line:
                 if symbol != ' ':
-                    if symbol in dict:
+                    if symbol in symbols_dict:
                         symbols_dict[symbol] = symbols_dict[symbol] + 1
                     else:
                         symbols_dict[symbol] = 1
