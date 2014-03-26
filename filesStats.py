@@ -80,3 +80,7 @@ def main():
         results_file.close()
     else:
         print("Error! Incorrect number of given parameters.")
+
+
+if __name__ == "__main__":
+    main()
