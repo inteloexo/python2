@@ -55,29 +55,32 @@ def write_to_file(output, *data):
 
 def main():
     if len(sys.argv) == 3:
-        file_paths = get_dir_file_paths(sys.argv[1])
-        results_file = open(sys.argv[1], 'w')
+        if os.path.isdir(sys.argv[1]):
+            file_paths = get_dir_file_paths(sys.argv[1])
+            results_file = open(sys.argv[1], 'w')
 
-        for file in file_paths:
-            words_count = get_words_count(file)
-            symbols_count = get_symbols_count(file)
+            for file in file_paths:
+                words_count = get_words_count(file)
+                symbols_count = get_symbols_count(file)
 
-            results_file.write("Statistics of file '%s':"
+                results_file.write("Statistics of file '%s':"
                                "\nWords:\n" % (file))
+                write_to_file(results_file, words_count)
+                results_file.write("Symbols:\n")
+                write_to_file((results_file,symbols_count))
+
+            words_count = get_words_count(file_paths)
+            symbols_count = get_symbols_count(file_paths)
+
+            results_file.write("Statistics of all files from directory '%s':"
+                                "\nWords:\n" % sys.argv[1])
             write_to_file(results_file, words_count)
             results_file.write("Symbols:\n")
             write_to_file((results_file,symbols_count))
 
-        words_count = get_words_count(file_paths)
-        symbols_count = get_symbols_count(file_paths)
-
-        results_file.write("Statistics of all files from directory '%s':"
-                               "\nWords:\n" % sys.argv[1])
-        write_to_file(results_file, words_count)
-        results_file.write("Symbols:\n")
-        write_to_file((results_file,symbols_count))
-
-        results_file.close()
+            results_file.close()
+        else:
+            print("Directory does not exist!")
     else:
         print("Error! Incorrect number of given parameters.")
 
