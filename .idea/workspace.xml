@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3e99dc-d418-4545-8d3e-c1d98c1c406b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/python2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/filesStats.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filesStats.py" afterPath="$PROJECT_DIR$/filesStats.py" />
     </list>
     <ignored path="python2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +28,10 @@
       <file leaf-file-name="filesStats.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filesStats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="320" selection-end="320" vertical-scroll-proportion="0.10033445" vertical-offset="0" max-vertical-offset="598">
-              <folding />
+            <state line="12" column="27" selection-start="415" selection-end="415" vertical-scroll-proportion="0.30100334" vertical-offset="0" max-vertical-offset="598">
+              <folding>
+                <element signature="e#323#332#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,8 +167,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/filesStats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="320" selection-end="320" vertical-scroll-proportion="0.10033445" vertical-offset="0" max-vertical-offset="598">
-          <folding />
+        <state line="12" column="27" selection-start="415" selection-end="415" vertical-scroll-proportion="0.30100334" vertical-offset="0" max-vertical-offset="598">
+          <folding>
+            <element signature="e#323#332#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
