@@ -1,4 +1,5 @@
-#Apskaiciuoti nurodytoje direktorijoje esanciu failu statistika ir ja isvesti i faila.
+#Apskaiciuoti nurodytoje direktorijoje esanciu failu statistika
+# ir ja isvesti i faila.
 #Statistika: pirmiausia isvesti bendrai visuose failuose kokie ir kiek kartu
 #pasikartoja a) zodziai b) simboliai. Antra, i ta pati faila isvesti ta pacia
 #statistika apskaiciuota kiekvienam failui atskirai.
@@ -23,6 +24,7 @@ def get_dir_file_paths(path):
         print (item)
 
     return file_paths
+
 
 def get_words_count(*args):
     words_dict = {}
@@ -63,7 +65,8 @@ def get_symbols_count(*args):
 
 def write_to_file(output, **kwargs):
     for key in kwargs:
-       output.write("'%s' - %s\n" % (key, kwargs[key]))
+        output.write("'%s' - %s\n" % (key, kwargs[key]))
+
 
 def main():
     if len(sys.argv) == 3:
@@ -76,7 +79,7 @@ def main():
                 symbols_count = get_symbols_count(file)
 
                 results_file.write("Statistics of file '%s':"
-                               "\nWords:\n" % (file))
+                                   "\nWords:\n" % (file))
                 write_to_file(results_file, **words_count)
                 results_file.write("Symbols:\n")
                 write_to_file(results_file, **symbols_count)
@@ -85,7 +88,7 @@ def main():
             symbols_count = get_symbols_count(*file_paths)
 
             results_file.write("Statistics of all files from directory '%s':"
-                                "\nWords:\n" % sys.argv[2])
+                               "\nWords:\n" % sys.argv[2])
             write_to_file(results_file, **words_count)
             results_file.write("Symbols:\n")
             write_to_file(results_file, **symbols_count)
