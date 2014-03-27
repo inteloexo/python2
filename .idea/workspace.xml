@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3e99dc-d418-4545-8d3e-c1d98c1c406b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filesStats.py" afterPath="$PROJECT_DIR$/filesStats.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="python2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="filesStats.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filesStats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="14" selection-start="2591" selection-end="2591" vertical-scroll-proportion="0.548495" vertical-offset="1037" max-vertical-offset="1650">
+            <state line="22" column="0" selection-start="626" selection-end="626" vertical-scroll-proportion="0.5518395" vertical-offset="0" max-vertical-offset="1605">
               <folding>
                 <element signature="e#325#334#0" expanded="true" />
               </folding>
@@ -282,14 +281,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="32" width="1301" height="728" extended-state="0" />
+    <frame x="65" y="32" width="1301" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24942264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24942264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -332,7 +331,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filesStats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="14" selection-start="2591" selection-end="2591" vertical-scroll-proportion="0.548495" vertical-offset="1037" max-vertical-offset="1650">
+        <state line="22" column="0" selection-start="626" selection-end="626" vertical-scroll-proportion="0.5518395" vertical-offset="0" max-vertical-offset="1605">
           <folding>
             <element signature="e#325#334#0" expanded="true" />
           </folding>

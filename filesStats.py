@@ -20,9 +20,6 @@ def get_dir_file_paths(path):
         else:
             file_paths.remove(file_paths[index])
 
-    for item in file_paths:
-        print (item)
-
     return file_paths
 
 
